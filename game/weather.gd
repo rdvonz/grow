@@ -4,13 +4,13 @@ extends Node2D
 # member variables here, example:
 # var a=2
 var weather = 1
-var currentMusic = get_node("Music1")
+var currentMusic
 var musicTime = 0.0
 
 
 func _ready():
 	set_process(true)
-	#currentMusic = get_node("Music1")
+	currentMusic = get_node("Music1")
 	currentMusic.play()
 
 func _input(event):
