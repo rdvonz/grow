@@ -15,7 +15,7 @@ func _ready():
 	turt. y = screen[1]/2
 	turt.z = 0
 	set.append(turtle(0, 0))
-	for i in range(0, 200):
+	for i in range(0, 20):
 		set.append(turtle(pow(-1, i)*i*50, pi/64))
 		print(set[i])
 	
