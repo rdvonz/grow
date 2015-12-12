@@ -10,6 +10,8 @@ var musicTime = 0.0
 
 func _ready():
 	set_process(true)
+	#currentMusic = get_node("Music1")
+	currentMusic.play()
 
 func _input(event):
 	if is_pressed("one"):
