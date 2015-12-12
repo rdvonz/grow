@@ -19,10 +19,10 @@ func _input(event):
 		get_node("Bleh").set_pos(Vector2(get_viewport_rect().size.width*0.2, get_node("Bleh").get_pos().y))
 		print("HEA")
 		musicTime = currentMusic.get_pos()
-		currentMusic.stop()
-		currentMusic = get_node("Music1")
-		currentMusic.set_pos(musicTime)
-		currentMusic.play()
+		currentMusic.stop()#pressng 1 should stop music now, but that's not happening
+		#currentMusic = get_node("Music1")
+		#currentMusic.set_pos(musicTime)
+		#currentMusic.play()
 	if is_pressed("two"):
 		weather = 2
 		get_node("Bleh").set_pos(Vector2(get_viewport_rect().size.width*0.4, get_node("Bleh").get_pos().y))
